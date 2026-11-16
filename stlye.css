@@ -1,1 +1,222 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
 
+body {
+    background-color: #faf8f5;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Navigasi Atas */
+.navbar {
+    background-color: #8b1e1e; /* Merah marun khas rumah makan Padang */
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f3c64f; /* Emas khas Minang */
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #f3c64f;
+}
+
+/* Bagian Hero */
+.hero {
+    background-color: #631212;
+    color: #ffffff;
+    text-align: center;
+    padding: 4.5rem 1rem;
+    border-bottom: 4px solid #d99b26;
+}
+
+.hero h2 {
+    font-size: 2.1rem;
+    color: #f3c64f;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.05rem;
+    color: #f0e6e6;
+}
+
+/* Tombol Call-To-Action */
+.btn-cta {
+    display: inline-block;
+    background-color: #d99b26;
+    color: #260707;
+    padding: 0.85rem 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-cta:hover {
+    background-color: #f3c64f;
+    transform: translateY(-2px);
+}
+
+/* Konten Menu */
+.section-block {
+    padding: 3.5rem 0 1.5rem 0;
+}
+
+.section-heading {
+    font-size: 1.6rem;
+    color: #8b1e1e;
+    margin-bottom: 1.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid #d99b26;
+    display: inline-block;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border: 1px solid #e5dfd5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-card h4 {
+    font-size: 1.15rem;
+    color: #631212;
+    margin-bottom: 0.6rem;
+}
+
+.menu-card p {
+    font-size: 0.92rem;
+    color: #555555;
+    margin-bottom: 1.2rem;
+}
+
+.price-tag {
+    font-weight: 700;
+    color: #1f7a5c;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #260e0e;
+    color: #e5dfd5;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 3.5rem;
+}
+
+.footer h4 {
+    color: #f3c64f;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.infra-note {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #9e8f8f;
+}
+
+/* Halaman Error (404) */
+.error-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #faf8f5;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.error-box {
+    max-width: 480px;
+}
+
+.error-code {
+    display: block;
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: #8b1e1e;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.error-box h1 {
+    font-size: 1.6rem;
+    color: #2b2b2b;
+    margin-bottom: 0.8rem;
+}
+
+.error-box p {
+    color: #666666;
+    margin-bottom: 2rem;
+}
+
+/* Responsif Layar Kecil */
+@media (max-width: 600px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .hero h2 {
+        font-size: 1.65rem;
+    }
+}
